@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Survey</title>
+  </head>
+  <body>
+        
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+
+<div id="question">
+      <label id="name-label" for="name">Name</label></br>
+      <input required id="name" type="text" placeholder="Name"></br>
+</div>
+<div id="question">
+      <label id="email-label" for="email">Email</label></br>
+      <input required id="email" type="email" placeholder="Email"></br>
+</div>
+<div id="question">
+      <label id="number-label" for="number">Age (optional)</label></br>
+      <input id="number" type="number" min="16" max="999" placeholder="Age"></br>
+</div>   
+
+<div id="question">
+      <label id="dropdown-label">Which of the following best describes your level</label></br>
+      <select id="dropdown" placeholder="Select current role">
+        <option value="" disabled selected>Select your current role</option>
+        <option value="Learning">Learning to code alongside job in another field</option>
+        <option value="Student">Student</option>
+        <option value="Part time">Part time coder</option>
+        <option value="Full time">Full time coder</option>
+      </select></br>
+</div>
+
+<div id="question">
+      <label id="radio-label">How likely are you to recommend freeCodeCamp to a friend?</label></br>
+      <input type="radio" id="definitely" name="recommendation" value="definitely">
+      <label for="definitely" id="radio">Definitely</label></br>
+      <input type="radio" id="maybe" name="recommendation" value="maybe">
+      <label for="maybe" id="radio">Maybe</label></br>
+      <input type="radio" id="unlikely" name="recommendation" value="unlikely">
+      <label for="unlikely" id="radio">Unlikely</label></br>
+</div>
+
+<div id="question">
+      <label id="checkbox">What areas are you interested in?</label></br>
+      <input type="checkbox" id="front" value="front">
+      <label for="front" id="checkbox">Front end</label></br>
+      <input type="checkbox" id="back" value="back">
+      <label for="back" id="checkbox">Back end</label></br>
+      <input type="checkbox" id="full" value="full">
+      <label for="full" id="checkbox">Full stack</label></br>
+      <input type="checkbox" id="data" value="data">
+      <label for="data" id="checkbox">Data science</label>   </br>
+</div>
+
+<div id="question">
+    <label for="comments" id="textarea">Any other comments or suggestions?</label></br>
+    <textarea id="comments" placeholder="Enter feedback here"></textarea></br>
+</div>
+
+<div id="question">
+    <input type="submit" id="submit">
+</div>
+    </form>
+
+  </body>
+</html>
